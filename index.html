@@ -29,6 +29,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- PWA manifest -->
+  <link rel="manifest" href="manifest.json">
+
   <!-- =======================================================
   * Template Name: Anyar - v3.0.0
   * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
@@ -44,6 +47,10 @@
   gtag('js', new Date());
 
   gtag('config', 'G-QC33RQJSNR');
+
+  navigator.serviceWorker &&
+    navigator.serviceWorker.register('SW.js').then(function (registration) {
+    });
 </script>
 
 <body>
